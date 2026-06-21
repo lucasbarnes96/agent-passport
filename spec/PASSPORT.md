@@ -40,7 +40,8 @@ Suggested sections (flexible):
 
 ## Validation
 
-Validator tooling planned. See Clara roadmap: [clarainsure.com/roadmap](https://clarainsure.com/roadmap).
+Validator tooling is planned. For now, submit schema feedback through the
+structured issue form or discuss design tradeoffs in GitHub Discussions.
 
 ## Interoperability targets
 

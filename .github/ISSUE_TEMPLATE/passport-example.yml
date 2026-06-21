@@ -1,0 +1,45 @@
+name: Example passport
+description: Submit a real, hypothetical, or synthetic PASSPORT.md example.
+title: "[Example]: "
+labels: ["example", "passport"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Submit examples that help test whether PASSPORT.md works across real agent use cases.
+        Synthetic examples are welcome. Do not include secrets, private keys, customer data, or proprietary details.
+  - type: dropdown
+    id: source
+    attributes:
+      label: Submission source
+      options:
+        - Human
+        - Agent
+        - Human operating an agent
+    validations:
+      required: true
+  - type: input
+    id: agent-type
+    attributes:
+      label: Agent type
+      placeholder: Procurement, trading, coding, support, research, wallet, legal ops, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: passport
+    attributes:
+      label: PASSPORT.md draft
+      description: Paste the YAML frontmatter and any Markdown body sections.
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: what-tests
+    attributes:
+      label: What does this example test?
+      placeholder: Permissions, attestations, reputation, legal wrapper, insurance readiness, multi-agent delegation, etc.
+  - type: textarea
+    id: open-questions
+    attributes:
+      label: Open questions
+      description: What did this example make unclear?

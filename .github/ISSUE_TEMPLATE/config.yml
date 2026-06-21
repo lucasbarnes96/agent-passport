@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Open-ended discussion
+    url: https://github.com/lucasbarnes96/agent-passport/discussions
+    about: Use Discussions for broad questions, debates, and early ideas.
+  - name: Clara website
+    url: https://clarainsure.com/
+    about: Read the public thesis and White Paper.

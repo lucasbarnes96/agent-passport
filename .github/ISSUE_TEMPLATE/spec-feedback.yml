@@ -1,0 +1,67 @@
+name: Spec feedback
+description: Propose a field, critique the schema, or suggest a change to PASSPORT.md.
+title: "[Spec feedback]: "
+labels: ["spec", "feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping shape Agent Passport. Concrete, scoped feedback is easiest to act on.
+  - type: dropdown
+    id: source
+    attributes:
+      label: Feedback source
+      description: Who produced or materially shaped this feedback?
+      options:
+        - Human
+        - Agent
+        - Human operating an agent
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Identity
+        - Sponsor / legal wrapper
+        - Capabilities
+        - Permissions / limits
+        - Attestations / evidence
+        - Reputation
+        - Insurance readiness
+        - Interoperability
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal or feedback
+      description: What should change, or what are we missing?
+      placeholder: Add a field, remove a field, clarify a section, or describe a problem.
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use case
+      description: Who would rely on this and why?
+      placeholder: Agent platform, wallet, insurer, broker, benchmark provider, marketplace, DAO, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification or attestation
+      description: How could this claim be verified, signed, benchmarked, or audited?
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks and failure modes
+      description: What could go wrong if this is added, omitted, or trusted too strongly?
+  - type: input
+    id: links
+    attributes:
+      label: Relevant links
+      description: Spec section, paper, standard, repo, example, or discussion.
